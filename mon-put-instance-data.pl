@@ -335,7 +335,7 @@ if (!$report_mem_util && !$report_mem_used && !$report_mem_avail
 }
 
 #my $timestamp = CloudWatchClient::get_offset_time(NOW);
-my $timestamp = CloudWatchClient::get_ntp_time('ntp1.cs.wisc.edu');
+my $timestamp = CloudWatchClient::get_ntp_time('proxy');
 my $instance_id = CloudWatchClient::get_instance_id();
 
 if (!defined($instance_id) || length($instance_id) == 0) {
